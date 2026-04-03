@@ -19,9 +19,11 @@ The project is organized as follows:
 Data Handling('data_loader.py'): 
 - The buildings have variable storeys, so the data matrices were initialized using the maximum matrix size with NaN to allow vectorized operations.
 - Potential damage-sensitive features were designed and tested to try to account for localized stiffness reduction (such as max inter-storey frequency drops and a $\Delta k$ estimator)
+
 Baseline Modeling('2_3_Baselines_PBSHM.py'):
 - Random Forest was selected as the supervised baseline because it efficiently handles non-linearities in data and has built-in feature importance tracking.
 - For the unsupervised approach, PCA was applied prior to K-Means to reduce dimensionality. The case of keeping 95% of the data was tested, and then keeping only 2 components for visual separation.
+
 Graph Approach('4_Graph_Based_Extension.PBSHM.py'):
 - A Graph Convolutional Network (GCN) was implemented via `torch_geometric` to model the inter-storey relationships of buildings (storeys as nodes, physical connections as edges).
 - An extra layer was added to the network, and 16 paths were simulated to allow easier data flow in the network.
