@@ -55,4 +55,4 @@ To reproduce the analysis, please follow these steps:
 
 
 ## AUTHOR
-Antonis Adamopoulos, Email:anadamopoulos@uth.gr
+Antonis Adamopoulos, Email:antonis.adamopoulos2003@gmail.com  or  aadamopoulos@ethz.ch
